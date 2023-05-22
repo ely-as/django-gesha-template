@@ -1,0 +1,21 @@
+name: Create release when new tag is pushed
+
+on:
+  push:
+    tags:
+      - "v*.*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Zip project template
+      run: zip -r ${{ github.event.repository.name }}-${{ github.ref_name }}.zip project_template
+
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: ${{ github.event.repository.name }}-${{ github.ref_name }}.zip

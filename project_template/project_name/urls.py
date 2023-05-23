@@ -16,9 +16,10 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
 
 urlpatterns = [
+    path("", include(("{{ project_name }}_app.urls", "{{ project_name }}_app"))),
     path("admin/", admin.site.urls),
 ]
 

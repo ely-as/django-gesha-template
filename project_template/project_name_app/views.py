@@ -1,3 +1,6 @@
-from django.shortcuts import render
+import gesha
+from django.views.generic import TemplateView
 
-# Create your views here.
+
+class IndexView(gesha.JSContextMixin, TemplateView):
+    template_name = "{{ project_name }}_app/index.html"

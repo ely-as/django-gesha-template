@@ -26,6 +26,8 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
 
+View the website in your browser at [127.0.0.1:8000](http://127.0.0.1:8000/).
+
 ## Development
 
 ### Install packages

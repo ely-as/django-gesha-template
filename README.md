@@ -17,6 +17,9 @@ django-admin startproject myproject \
 --template https://github.com/ely-as/django-gesha-template/releases/download/v0.1a1/django-gesha-template.zip
 ```
 
+And then follow the installation instructions in the README of your newly created
+project.
+
 ## Contributing
 
 See [CONTRIBUTING](CONTRIBUTING.md).

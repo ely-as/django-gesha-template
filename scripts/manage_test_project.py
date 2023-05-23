@@ -4,7 +4,7 @@ from pathlib import Path
 
 from django.core.management import call_command
 
-TEST_PROJECT_NAME = "test_project"
+TEST_PROJECT_NAME: str = "test_project"
 
 BASE_DIR: Path = Path(__file__).parent.parent
 PATH_TO_TEMPLATE: Path = BASE_DIR / "project_template"

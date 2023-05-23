@@ -1,3 +1,11 @@
+[tool.black]
+extend-exclude = "(/migrations)"
+
+[tool.coverage.run]
+omit = [
+    "*/migrations/*",
+]
+
 [tool.mypy]
 warn_unused_configs = true
 files = [

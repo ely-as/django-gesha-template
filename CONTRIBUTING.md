@@ -16,7 +16,9 @@ $ git push origin v0.1
 ## Apply formatting to template (.py-tpl) files
 
 ```console
+$ cd project_template
 $ black . --include "(\.py-tpl)"
+$ ruff check --select I --fix **/*.py-tpl
 ```
 
 ## Checking for template changes between Django releases

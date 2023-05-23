@@ -11,3 +11,22 @@ ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "{{ project_name }}.settings"
+
+[tool.ruff]
+select = [
+    "F",     # Pyflakes
+    "E",     # pycodestyle errors
+    "W",     # pycodestyle warnings
+    "I",     # isort
+    "B",     # flake8-bugbear
+    "C",     # flake8-comprehensions and mccabe
+]
+fixable = [
+    "I",     # isort
+]
+ignore = [
+    "E501",  # line too long
+]
+
+[tool.ruff.mccabe]
+max-complexity = 5

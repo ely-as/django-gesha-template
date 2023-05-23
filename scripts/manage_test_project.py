@@ -38,7 +38,7 @@ def main() -> None:
             "startproject",
             TEST_PROJECT_NAME,
             str(PATH_TO_TEST_PROJECT),
-            extension=["md", "toml"],
+            extension=["md", "py", "toml"],
             template=str(PATH_TO_TEMPLATE),
         )
 

@@ -13,13 +13,15 @@ $ git tag v0.1 -m v0.1
 $ git push origin v0.1
 ```
 
-## Apply formatting to template (.py-tpl) files
+## Apply formatting to template files
 
 ```console
 $ cd project_template
-$ black . --include "(\.py-tpl)"
-$ ruff check --select I --fix **/*.py-tpl
+$ black .
+$ ruff check --select I --fix .
 ```
+
+Note: this may fail for some files depending on where the template tags are used.
 
 ## Checking for template changes between Django releases
 

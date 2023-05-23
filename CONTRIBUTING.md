@@ -32,3 +32,7 @@ See if anything has changed e.g. between `3.0.7` and `3.0.8`:
 $ git fetch --depth 1 upstream tag 3.0.8
 $ git diff 3.0.7 3.0.8 django/conf/project_template
 ```
+
+## Other checks
+
+- [`.gitignore`](project_template/.gitignore): copied from https://github.com/github/gitignore/blob/main/Python.gitignore.

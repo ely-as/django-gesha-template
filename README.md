@@ -14,7 +14,7 @@ For example, to create a project named `myproject`:
 ```sh
 django-admin startproject myproject \
 --extension md,py,toml \
---template https://github.com/ely-as/django-gesha-template/releases/download/v0.1alpha0/django-gesha-template.zip
+--template https://github.com/ely-as/django-gesha-template/releases/download/v0.1a1/django-gesha-template.zip
 ```
 
 ## Contributing

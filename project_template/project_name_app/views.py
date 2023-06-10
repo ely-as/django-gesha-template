@@ -8,6 +8,6 @@ class IndexView(gesha.JSContextMixin, TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         projname = "{{ project_name }}"
-        context["script_path"] = f"{projname}_app/dist/{projname}.bundle.min.js"
+        context["script_path"] = f"{projname}_app/dist/main.bundle.min.js"
         context["stylesheet_path"] = f"{projname}_app/dist/main.css"
         return context

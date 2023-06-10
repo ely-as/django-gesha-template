@@ -16,11 +16,11 @@ const debug = (String(process.env.DEBUG).toLowerCase() === "true");
 const paths = {
   dest: "{{ project_name }}_app/static/{{ project_name }}_app/dist",
   scripts: {
-    entries: ["src_js/main.ts"],
+    entries: ["src/main.ts"],
     outfile: "{{ project_name }}.bundle.min.js"
   },
   styles: {
-    src: "src_css/**/*.*css"
+    src: "src/**/*.*css"
   }
 };
 

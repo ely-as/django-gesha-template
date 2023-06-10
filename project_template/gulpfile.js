@@ -1,6 +1,7 @@
 const gulp = require("gulp");
 const browserify = require("browserify");
 const buffer = require("vinyl-buffer");
+const concat = require('gulp-concat');
 const cssmin = require('gulp-cssmin');
 const fancy_log = require("fancy-log");
 const sass = require('gulp-sass')(require('sass'));
@@ -49,6 +50,7 @@ function scripts() {
 function styles() {
   return gulp.src(paths.styles.src, { sourcemaps: true })
     .pipe(sass())
+    .pipe(concat("main.css"))
     .pipe(cssmin())
     .pipe(gulp.dest(paths.dest));
 }

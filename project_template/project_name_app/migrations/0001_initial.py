@@ -21,6 +21,7 @@ class Migration(migrations.Migration):
                         verbose_name="ID",
                     ),
                 ),
+                ("created", models.DateTimeField(auto_now_add=True)),
                 ("name", models.CharField(max_length=255, verbose_name="Name")),
                 (
                     "email",
@@ -32,5 +33,9 @@ class Migration(migrations.Migration):
                 ),
                 ("description", models.TextField(verbose_name="Description")),
             ],
+            options={
+                "ordering": ["-created"],
+                "get_latest_by": "created",
+            },
         ),
     ]

@@ -1,5 +1,7 @@
 # django-gesha-template
 
+[![Test](https://github.com/ely-as/django-gesha-template/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/ely-as/django-gesha-template/actions/workflows/test.yml)
+
 Generate [Django](https://www.djangoproject.com/) projects which use
 [django-gesha](https://github.com/ely-as/django-gesha) (a package which provides
 JavaScript utilities).

@@ -30,30 +30,51 @@ View the website in your browser at [127.0.0.1:8000](http://127.0.0.1:8000/).
 
 ## Development
 
-### Install packages
+### Python
+
+#### Install packages
 ```console
 $ pip install -r requirements-test.txt
 ```
 
-### Apply formatting
+#### Apply formatting
 To apply black and isort formatting:
 ```console
 $ black .
 $ ruff check --select I --fix .
 ```
 
-### Type checking
+#### Type checking
 ```console
 $ mypy
 ```
 
-### Linting
+#### Linting
 ```console
 $ ruff check .
 ```
 
-### Run unit tests
+#### Run unit tests
 To run unit tests and report coverage to terminal:
 ```console
 $ pytest --cov-report=term
+```
+
+### TypeScript
+
+Requires [Node.js](https://nodejs.org/en).
+
+#### Install packages
+```console
+$ npm install
+```
+
+#### Linting
+```console
+$ npm run lint
+```
+
+#### Run unit tests
+```console
+$ npm test
 ```

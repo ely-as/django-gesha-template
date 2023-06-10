@@ -13,7 +13,7 @@ command.
 For example, to create a project named `myproject`:
 ```sh
 django-admin startproject myproject \
---extension md,py,toml \
+--extension js,json,md,py,toml \
 --template https://github.com/ely-as/django-gesha-template/releases/download/v0.1a2/django-gesha-template.zip
 ```
 

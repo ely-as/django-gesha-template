@@ -34,6 +34,7 @@ class Migration(migrations.Migration):
                 ("description", models.TextField(verbose_name="Description")),
             ],
             options={
+                "verbose_name": "enquiry",
                 "verbose_name_plural": "enquiries",
                 "ordering": ["-created"],
                 "get_latest_by": "created",

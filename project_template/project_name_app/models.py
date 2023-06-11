@@ -12,4 +12,5 @@ class Enquiry(models.Model):
     class Meta:
         get_latest_by = "created"
         ordering = ["-created"]
-        verbose_name_plural = "enquiries"
+        verbose_name = _("enquiry")
+        verbose_name_plural = _("enquiries")

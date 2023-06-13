@@ -12,6 +12,19 @@
     <link href="{% static stylesheet_path %}" rel="stylesheet" />
   </head>
   <body>
+    <div class="container">
+      <h1>{% translate "Site" %}</h1>
+
+      <h2>{% translate "Enquire" %}</h1>
+      <form id="enquiry-form" autocomplete="off">
+        {% csrf_token %}
+        <div class="form-fields">
+          {{ enquiry_form.as_p }}
+        </div>
+        <button type="button">{% translate "Submit" %}</button>
+      </form>
+    </div>
+
     {% jscontext %}
     <script src="{% static 'gesha/dist/js/django-gesha.bundle.min.js' %}"></script>
     <script src="{% static script_path %}"></script>

@@ -14,18 +14,24 @@
     <link href="{% static stylesheet_path %}" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <h1>{% translate "Site" %}</h1>
+    <header>
+      <div class="container">
+        <h1>{% translate "My Site" %}</h1>
+      </div>
+    </header>
 
-      <h2>{% translate "Enquire" %}</h1>
-      <form id="enquiry-form" autocomplete="off">
-        {% csrf_token %}
-        <div class="form-fields">
-          {{ enquiry_form.as_p }}
-        </div>
-        <button type="button">{% translate "Submit" %}</button>
-      </form>
-    </div>
+    <main>
+      <div class="container">
+        <h2>{% translate "Enquire" %}</h1>
+        <form id="enquiry-form" autocomplete="off">
+          {% csrf_token %}
+          <div class="form-fields">
+            {{ enquiry_form.as_p }}
+          </div>
+          <button type="button">{% translate "Submit" %}</button>
+        </form>
+      </div>
+    </main>
 
     {% jscontext %}
     <script src="{% static 'gesha/dist/js/django-gesha.bundle.min.js' %}"></script>

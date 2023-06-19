@@ -60,13 +60,25 @@ To run unit tests and report coverage to terminal:
 $ pytest --cov-report=term
 ```
 
-### TypeScript
+### TypeScript / SASS
 
-Requires [Node.js](https://nodejs.org/en).
+Requires [Node.js](https://nodejs.org/en). Source files for both TypeScript and SASS
+are located in [/src](src).
 
 #### Install packages
 ```console
 $ npm install
+```
+
+#### Build
+To build the JS and CSS assets loaded in the base template:
+```console
+$ gulp
+```
+
+To watch files and build continuously (useful to run alongside `manage.py runserver`):
+```console
+$ gulp watch
 ```
 
 #### Linting

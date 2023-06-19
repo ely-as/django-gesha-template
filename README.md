@@ -16,7 +16,7 @@ For example, to create a project named `myproject`:
 ```sh
 django-admin startproject myproject \
 --extension js,json,md,py,toml \
---template https://github.com/ely-as/django-gesha-template/releases/download/v0.1a3/django-gesha-template.zip
+--template https://github.com/ely-as/django-gesha-template/releases/download/v0.1a4/django-gesha-template.zip
 ```
 
 And then follow the installation instructions in the README of your newly created

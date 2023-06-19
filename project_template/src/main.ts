@@ -1,6 +1,6 @@
 import "django-gesha";
 
-async function handleEnquiry(e: Event) {
+async function handleEnquiry() {
   const form = document.getElementById("enquiry-form") as HTMLFormElement;
   const formFields = form.querySelector(".form-fields");
   const formData = new FormData(form);

@@ -21,7 +21,8 @@ const paths = {
     outfile: "main.bundle.min.js"
   },
   styles: {
-    src: "src/**/*.*css"
+    src: "src/**/*.*css",
+    outfile: "main.css"
   }
 };
 
@@ -50,7 +51,7 @@ function scripts() {
 function styles() {
   return gulp.src(paths.styles.src, { sourcemaps: true })
     .pipe(sass())
-    .pipe(concat("main.css"))
+    .pipe(concat(paths.styles.outfile))
     .pipe(cssmin())
     .pipe(gulp.dest(paths.dest));
 }

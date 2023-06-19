@@ -5,7 +5,7 @@
     "test": "tests_js"
   },
   "scripts": {
-    "lint": "eslint ./*_js/**/*.ts",
+    "lint": "eslint ./src/**/*.ts",
     "test": "mocha"
   },
   "devDependencies": {

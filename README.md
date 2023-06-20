@@ -3,24 +3,45 @@
 [![Test](https://github.com/ely-as/django-gesha-template/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/ely-as/django-gesha-template/actions/workflows/test.yml)
 
 Generate [Django](https://www.djangoproject.com/) projects which use
-[django-gesha](https://github.com/ely-as/django-gesha) (a package which provides
+[django-gesha](https://django-gesha.readthedocs.io) (a package which provides
 JavaScript utilities).
+
+This template creates both a project and an app with a functioning website (a basic
+single page with an enquiry form).
+
+Comes configured with:
+- Python tools (all tests passing):
+  - [pytest](https://docs.pytest.org) for unit tests with
+    [coverage](https://coverage.readthedocs.io).
+  - [mypy](https://mypy.readthedocs.io) for static type checking.
+  - [ruff](https://beta.ruff.rs/docs/) for linting and code formatting.
+  - [black](https://black.readthedocs.io) for code formatting.
+- TypeScript tools:
+  - [Mocha](https://mochajs.org/) for unit tests.
+  - [ESLint](https://eslint.org/) for linting.
+  - [django-gesha](https://django-gesha.readthedocs.io) for easy integration with
+    Django.
+- [Gulp](https://gulpjs.com/) pipelines for:
+  - Compiling [TypeScript](https://www.typescriptlang.org/) with
+    [Browserify](https://browserify.org/) to a minified JavaScript bundle.
+  - Compiling [Sass](https://sass-lang.com/documentation/) to minified CSS.
 
 ## Usage
 
-[Install Django](https://docs.djangoproject.com/en/stable/intro/install/) and use the
-[`django-admin startproject`](https://docs.djangoproject.com/en/stable/ref/django-admin/#startproject)
-command.
+1. [Install Django](https://docs.djangoproject.com/en/stable/intro/install/).
+2. Call
+   [`django-admin startproject`](https://docs.djangoproject.com/en/stable/ref/django-admin/#startproject)
+   with the `--extension` and `--template` options. For example, to create a project
+   named `myproject` using the
+   [latest release](https://github.com/ely-as/django-gesha-template/releases):
 
-For example, to create a project named `myproject`:
-```sh
-django-admin startproject myproject \
---extension js,json,md,py,toml \
---template https://github.com/ely-as/django-gesha-template/releases/download/v0.1a4/django-gesha-template.zip
-```
+   ```sh
+   django-admin startproject myproject \
+   --extension js,json,md,py,toml \
+   --template https://github.com/ely-as/django-gesha-template/releases/download/v0.1a4/django-gesha-template.zip
+   ```
 
-And then follow the installation instructions in the README of your newly created
-project.
+3. Follow the installation instructions in the `README.md` of the newly created project.
 
 ## Contributing
 

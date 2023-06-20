@@ -41,7 +41,9 @@ Comes configured with:
    --template https://github.com/ely-as/django-gesha-template/releases/download/v0.1a4/django-gesha-template.zip
    ```
 
-3. Follow the installation instructions in the `README.md` of the newly created project.
+3. In the newly created project:
+   - Follow the installation instructions in the generated `README.md`.
+   - See the generated `CONTRIBUTING.md` for additional setup required for development.
 
 ## Contributing
 

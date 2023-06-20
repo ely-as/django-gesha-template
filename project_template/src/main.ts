@@ -16,7 +16,9 @@ async function handleEnquiry() {
 
 async function setupEnquiryForm() {
   const btn = document.querySelector("#enquiry-form [type=button]");
-  btn.addEventListener("click", handleEnquiry);
+  if (btn) {
+    btn.addEventListener("click", handleEnquiry);
+  }
 }
 
 setupEnquiryForm();

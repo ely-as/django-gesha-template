@@ -13,6 +13,8 @@ $ git tag v0.1 -m v0.1
 $ git push origin v0.1
 ```
 
+Update the release version in the [README's Usage section](README.md#usage).
+
 ## Apply formatting to template files
 
 ```console

@@ -48,3 +48,7 @@ Comes configured with:
 ## Contributing
 
 See [CONTRIBUTING](CONTRIBUTING.md).
+
+## License
+
+[MIT](LICENSE).

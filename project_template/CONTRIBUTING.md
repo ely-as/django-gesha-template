@@ -2,6 +2,8 @@
 
 ## Python development
 
+All of the following tools are configured in [`pyproject.toml`](pyproject.toml).
+
 ### Setup
 
 Install the additional packages used for Python development to your virtual environment:
@@ -12,7 +14,7 @@ $ pip install -r requirements-test.txt
 
 ### Write and run unit tests
 
-Python unit tests are located in the [tests](tests) directory.
+Python unit tests are located in the [`tests`](tests) directory.
 
 To run unit tests using [pytest](https://docs.pytest.org) and report
 [coverage](https://coverage.readthedocs.io) to terminal:
@@ -49,7 +51,7 @@ $ ruff check .
 
 ## TypeScript and Sass development
 
-Source files for both TypeScript and Sass are located in the [src](src) directory.
+Source files for both TypeScript and Sass are located in the [`src`](src) directory.
 
 ### Setup
 
@@ -63,26 +65,31 @@ $ npm install
 
 ### Build assets
 
-To compile the [src](src) files into the `.js` and `.css` bundles loaded by Django:
+To compile the [`src`](src) files into the `.js` and `.css` bundles loaded by Django:
 ```console
 $ gulp
 ```
 
-To watch [src](src) files and build continuously (useful to run alongside
+To watch [`src`](src) files and build continuously (useful to run alongside
 `manage.py runserver` during development):
 ```console
 $ gulp watch
 ```
 
+See [`gulpfile.js`](gulpfile.js) and [`tsconfig.json`](tsconfig.json) for configuration.
+
 ### Write and run unit tests
 
-TypeScript unit tests are located in the [tests_js](tests_js) directory.
+TypeScript unit tests are located in the [`tests_js`](tests_js) directory.
 
 To run unit tests using [Mocha](https://mochajs.org/):
 
 ```console
 $ npm test
 ```
+
+See [`.mocharc.json`](.mocharc.json) and [`package.json`](package.json) for
+configuration.
 
 ### Linting
 
@@ -91,3 +98,5 @@ To lint TypeScript code using [ESLint](https://eslint.org/):
 ```console
 $ npm run lint
 ```
+
+See [`.eslintrc.js`](.eslintrc.js) and [`package.json`](package.json) for configuration.

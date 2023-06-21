@@ -41,7 +41,7 @@ Comes configured with:
    ```sh
    django-admin startproject myproject \
    --extension js,json,md,py,toml \
-   --template https://github.com/ely-as/django-gesha-template/releases/download/v0.1a4/django-gesha-template.zip
+   --template https://github.com/ely-as/django-gesha-template/releases/download/v0.1a5/django-gesha-template.zip
    ```
 
 3. In the newly created project:

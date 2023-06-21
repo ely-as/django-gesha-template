@@ -6,11 +6,14 @@ Generate [Django](https://www.djangoproject.com/) projects which use
 [django-gesha](https://django-gesha.readthedocs.io) (a package which provides
 JavaScript utilities).
 
-This template creates both a project and an app with a functioning website (a basic
-single page with an enquiry form).
+Features:
+- Start your project with clean TypeScript and Sass integration.
+- Generates both a project and an installed app.
+- Starts you off with a functioning website (all tests passing) so you can start with a
+  working state.
 
 Comes configured with:
-- Python tools (all tests passing):
+- Python tools:
   - [pytest](https://docs.pytest.org) for unit tests with
     [coverage](https://coverage.readthedocs.io).
   - [mypy](https://mypy.readthedocs.io) for static type checking.
@@ -44,6 +47,9 @@ Comes configured with:
 3. In the newly created project:
    - Follow the installation instructions in the generated `README.md`.
    - See the generated `CONTRIBUTING.md` for additional setup required for development.
+
+**Note:** If `startproject` fails to download the URL you can download the ZIP file
+manually and use `--template` with a local path.
 
 ## Contributing
 

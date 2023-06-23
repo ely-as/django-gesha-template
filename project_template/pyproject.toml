@@ -9,13 +9,17 @@ omit = [
 [tool.mypy]
 warn_unused_configs = true
 files = [
-    "{{ project_name }}/**/*.py",
+    "{{ project_name }}*/**/*.py",
     "tests/**/*.py",
 ]
 
 [[tool.mypy.overrides]]
 module = "django.*"
 ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "*.migrations.*"
+ignore_errors = true
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "{{ project_name }}.settings"

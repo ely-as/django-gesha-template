@@ -25,6 +25,7 @@ ignore_errors = true
 DJANGO_SETTINGS_MODULE = "{{ project_name }}.settings"
 
 [tool.ruff]
+exclude = ["*/migrations"]
 select = [
     "F",     # Pyflakes
     "E",     # pycodestyle errors

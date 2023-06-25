@@ -4,6 +4,7 @@ extend-exclude = "(/migrations)"
 [tool.coverage.run]
 omit = [
     "*/migrations/*",
+    "tests/*",
 ]
 
 [tool.mypy]
